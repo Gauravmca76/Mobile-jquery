@@ -1,0 +1,402 @@
+<html lang="en"><head>
+        <title>|| Examination Form ||</title>
+        <noscript><meta http-equiv="refresh" content="0; URL=noscript.html"></noscript>        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bscallout.css">
+        <script type="text/javascript" async="" defer="" src="//muexam.mu.ac.in/statucc/piwik.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/qpy2aGtSgsYPZzCoYWjcaBCo/recaptcha__en.js"></script><script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/formfill_minjsmca.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+        <link rel="stylesheet" href="css/datepicker3.css">   
+    <script type="text/javascript">google.load("elements","1",{packages:"transliteration"});function onLoad(){var options={sourceLanguage:'en',destinationLanguage:['hi'],shortcutKey:'ctrl+g',transliterationEnabled:true};var control=new google.elements.transliteration.TransliterationControl(options);var ids=["marname"];control.makeTransliteratable(ids);}google.setOnLoadCallback(onLoad);</script><script src="https://www.google.com/uds/?file=elements&amp;v=1&amp;packages=transliteration" type="text/javascript"></script><link href="https://www.google.com/uds/api/elements/1.0/7ded0ef8ee68924d96a6f6b19df266a8/transliteration.css" type="text/css" rel="stylesheet"><script src="https://www.google.com/uds/api/elements/1.0/7ded0ef8ee68924d96a6f6b19df266a8/transliteration.I.js" type="text/javascript"></script>
+	<script>$(document).bind("contextmenu",function(e){e.preventDefault();});$(document).keydown(function(e){if(e.which===123){return false;}});</script>
+	
+        <script type="text/javascript">function numeralsOnly(evt){evt=(evt)?evt:event;var charCode=(evt.charCode)?evt.charCode:((evt.keyCode)?evt.keyCode:((evt.which)?evt.which:0));if(charCode>31&&(charCode<48||charCode>57)){return false;}return true;}</script>
+        <style type="text/css">@font-face{font-family:"OLDENGL";src:url(fonts/OLDENGL.TTF)}@font-face{font-family:"utsaah";src:url(fonts/utsaahb.ttf)}</style>
+
+
+
+<script type="text/javascript">$(document).ready(function(){$('.showMY').datepicker({format:"MM, yyyy",startView:1,minViewMode:1,daysOfWeekDisabled:"0,1,2,3,4,5,6",autoclose:true}).on('changeMonth',function(e){var dp=$(e.currentTarget).data('datepicker');dp.date=e.date;dp.setValue();dp.hide();});$(".showMY").keydown(function(e){e.preventDefault();});});</script>
+    </head>
+    <body style="background: rgb(25, 28, 82) !important;" class="">
+        <br>
+        <br>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <p><img src="images/60x50xUoMLogoInvert.png.pagespeed.ic.nrsJwlU7U1.webp" height="50px" width="60px">&nbsp;&nbsp;<font size="6px" style="font-family: 'OLDENGL';"> University Of Mumbai</font></p>
+                </div>
+                <div class="panel-body" style="background: #FFF0EC">
+                    <form role="form" autocomplete="off" action="eformres1.php" method="POST">
+
+            
+                        <div class="form-group">
+                            <dl>
+                                <dt class="text-center"><h3><strong>Online Application For Examination</strong></h3></dt>
+                                <dd class="text-center text-danger">Students should fill this form online and submit the printout of the acknowledgement to the college.</dd>
+                            </dl>
+                            <hr class="divider">
+                        </div>
+					<!--	<div class="bs-callout bs-callout-danger hidden-print">
+<p><strong> Students of Semester 1 (Regular)(Choice Based Credit System), please <a href="mca_sem1">Click here</a> to fill your Examination Form.</strong></p>
+</div>
+<div class="bs-callout bs-callout-danger hidden-print">
+<p><strong> Students of Semester 3 (Regular)(Choice Based Credit System), please <a href="mca_sem3">Click here</a> to fill your Examination Form.</strong></p>
+<h4 class="text-danger"><strong>(Note: This Link is Only for Semester 1 and 2 CBSGS "Gap Students") </strong></h4>
+</div>
+-->
+
+<div class="bs-callout bs-callout-success hidden-print">
+<p class="lead"><strong>Your IP Address is recorded! Any mischief with the data of other students will attract actions as per IT Act.</strong></p>
+</div>
+<div class="bs-callout bs-callout-danger hidden-print">
+                            <h4 class="text-danger"><strong>KT Students to Note:</strong></h4>
+                          
+<p><strong>Only Students who had appeared for the Examinations in month of Second Half, 2019 and failed in some subjects can submit their form by pressing KT button below.</strong></p>
+<p><strong>Fail students of previous examinations who are appearing after a gap (who had not appeared for Second Half, 2019 exam in failed subjects) have to submit conventional hard copy form to their colleges.</strong>
+</p>
+
+</div>
+<div class="bs-callout bs-callout-primary hidden-print">
+                            <p><strong>If you have already submitted a form and forgotten your Chalan No., then please <a href="getchalan.php" target="_blank">Click here</a> to get your Chalan No.</strong></p>
+                            <p><strong>If you know your Chalan No. and want to print your acknowledgement, then please <a href="ackref.php" target="_blank">Click here</a></strong></p>     
+</div>
+                        <div class="form-group">
+                            <label class="control-label" for="StudentType">Select Type:</label>
+                            <center>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="stype" id="regstud" value="Regular" onchange="typeChange();" checked="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: bold" id="RegularVal">Regular</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="stype" id="ktstud" value="KT" onchange="typeChange();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="KTVal">KT</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </label>
+                            </div>
+                            </center>
+                            <p class="help-block">Students appearing for examinations of a particular semester for the first time should click Regular Button and Students who wish to apply for their failed subjects should click KT button.</p>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="program">Program (Pattern)</label>
+                            <select id="prname" name="prname" class="form-control" onchange="showSem(this.value)">
+                                <option value="Choose One..." selected="">Choose One...</option>
+                                                                    <option value="MCA#CA#Master of Computer Application##CBSGS">Master of Computer Application (CBSGS) </option>                                    <option value="MCA#BD#Master of Computer Application(BRIDGE)##CBSGS">Master of Computer Application(BRIDGE) (CBSGS) </option>                                    <option value="MCA#CAC#Master of Computer Application##Choice Based">Master of Computer Application (Choice Based) </option>                            </select> 
+                            <p class="help-block">Select Branch for Enrollment</p>
+                        </div>
+
+                        <div class="form-group" id="semestershow">
+                            <label class="control-label" for="part">Part (Semester)</label>
+                            <select id="semester" name="sem" class="form-control"><option value="Choose One...">Choose One after selecting Program...</option>
+                            </select>
+                            <p class="help-block">Select Semester for Enrollment. If your Semester is not available, please try in a few days.</p>
+                        </div>
+
+
+
+                        <div class="form-group row">
+                            <label class="control-label col-md-12" for="LastYearSeatNo">Last Semester Seat No OR ERN No.</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" name="seatval" id="seatnoval" placeholder="Last Sem Seat No." onkeypress="return numeralsOnly(event)" onblur="showAllDetails(prname.value, sem.value, this.value, ernval.value)">
+                            </div>
+                            <div class="col-md-1">
+                                <h5 class="text-center">OR</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" tabindex="-1" class="form-control" name="ernval" id="ernnoval" placeholder="ERN NO." onkeypress="return numeralsOnly(event)" onblur="showAllDetails(prname.value, sem.value, seatval.value, this.value)">
+                            </div>
+                            <div class="col-md-5">
+                                <div id="tooltip"></div>
+                            </div>
+
+                            <p class="help-block col-md-12" id="showSeatError">Regular Students should enter their Last Semester's Seat Number OR ERN No.; KT Students should enter their KT Exam Seat Number OR ERN No.</p>
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="control-label" for="College">College</label>
+                            <input type="text" class="form-control" name="colglist" id="colglist" placeholder="College name will appear automatically on entering valid Seat No./ERN" required="" readonly="readonly">
+                            <p class="help-block">Your College No. and Name</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="Name">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" maxlength="255" placeholder="Full Name will appear automatically on entering valid Seat No./ERN" required="" readonly="readonly">
+                            <p class="help-block">Your Full Name (Surname FirstName MiddleName MotherName)</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="MarathiName">Full Name in Marathi (Surname FirstName MiddleName MotherName)</label>
+                            <input type="text" class="form-control" id="marname" name="marname" placeholder="Full Name in Devanagari Script as per the same order in English Full Name" maxlength="255" style="font-family: utsaah; font-size:18px" required="">
+                            <p class="help-block">Your Full Name in Devanagari Script (Surname FirstName MiddleName MotherName). Please type your name using English keyboard, your text will be automatically converted to Devanagari on pressing spacebar. If you still face any difficulty, please visit <a target="_blank" href="http://www.google.com/intl/mr/inputtools/try/">		http://www.google.com/intl/mr/inputtools/try/</a> , type your name and copy paste in the above text box.</p>
+                        </div>
+
+                        <div class="form-group hidden-print">
+                        <label class="control-label" for="Center">Select your preferred Center</label>
+                        <select id="center" name="center" class="form-control">
+                            <option value="Choose One...">Choose One...</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Vashi">Vashi</option>
+                            <option value="Ratnagiri">Ratnagiri</option>
+                            <option value="Andheri">Andheri</option>
+                            <option value="Ghatkopar">Ghatkopar</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Karjat">Karjat</option>
+                            <option value="Vasai">Vasai</option>
+                        </select>
+                        <p class="text-danger"><strong>Note: The student will be given center as alloted to college. For any other centre, the student will require to apply seperately and shall be alloted if approved by Controller of Examinations.</strong></p>
+                        </div>
+
+                        <div class="form-group" style="display:none" id="tabprevdetails">
+                            <label class="control-label" for="PreviousDetails">Previous Examination Details</label>
+                            <table class="table table-bordered table-responsive">
+                                <thead>
+                                <tr class="warning">
+                                <th class="col-md-1" style="vertical-align:middle">Sem.</th>
+                                <th class="col-md-4" style="vertical-align:middle">Month, Year of Exam</th>
+                                <th class="col-md-3" style="vertical-align:middle">Seat No</th>
+                                <th class="col-md-1" style="vertical-align:middle">Is Sem Passed?</th>
+                                <th class="col-md-3" style="vertical-align:middle">GPA</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="tabrow1" style="display: none">
+                                        <td align="center"><strong>1</strong></td>
+					<td><input type="text" name="mp1" id="mp1" class="form-control showMY" placeholder="Month, Year of Sem 1"></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 1 Seat No." name="sno1" id="sno1" onkeypress="return numeralsOnly(event)"></td>
+                                        <td align="center"><input type="checkbox" class="checkbox" name="cb1" value="Y" checked=""></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 1 GPA" name="sgpa1" id="sgpa1" maxlength="7"></td>
+                                    </tr>
+                                    <tr id="tabrow2" style="display: none">
+                                        <td align="center"><strong>2</strong></td>
+					<td><input type="text" name="mp2" id="mp2" class="form-control showMY" placeholder="Month, Year of Sem 2"></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 2 Seat No." name="sno2" id="sno2" onkeypress="return numeralsOnly(event)"></td>
+                                        <td align="center"><input type="checkbox" class="checkbox" name="cb2" value="Y" checked=""></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 2 GPA" name="sgpa2" id="sgpa2" maxlength="7"></td>
+                                    </tr>
+                                    <tr id="tabrow3" style="display: none">
+                                        <td align="center"><strong>3</strong></td>
+					<td><input type="text" name="mp3" id="mp3" class="form-control showMY" placeholder="Month, Year of Sem 3"></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 3 Seat No." name="sno3" id="sno3" onkeypress="return numeralsOnly(event)"></td>
+                                        <td align="center"><input type="checkbox" class="checkbox" name="cb3" value="Y" checked=""></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 3 GPA" name="sgpa3" id="sgpa3" maxlength="7"></td>
+                                    </tr>
+                                    <tr id="tabrow4" style="display: none">
+                                        <td align="center"><strong>4</strong></td>
+					<td><input type="text" name="mp4" id="mp4" class="form-control showMY" placeholder="Month, Year of Sem 4"></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 4 Seat No." name="sno4" id="sno4" onkeypress="return numeralsOnly(event)"></td>
+                                        <td align="center"><input type="checkbox" class="checkbox" name="cb4" value="Y" checked=""></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 4 GPA" name="sgpa4" id="sgpa4" maxlength="7"></td>
+                                    </tr>
+                                    <tr id="tabrow5" style="display: none">
+                                        <td align="center"><strong>5</strong></td>
+					<td><input type="text" name="mp5" id="mp5" class="form-control showMY" placeholder="Month, Year of Sem 5"></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 5 Seat No." name="sno5" id="sno5" onkeypress="return numeralsOnly(event)"></td>
+                                        <td align="center"><input type="checkbox" class="checkbox" name="cb5" value="Y" checked=""></td>
+                                        <td><input type="text" class="form-control" placeholder="Sem 5 GPA" name="sgpa5" id="sgpa5" maxlength="7"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+			<p class="help-block">Enter details of your previous examination. Untick the checkbox under the 'Is Sem Passed?' column for a perticular semester if you have NOT cleared that semester i.e if you have any KT in that semester. Note: If you don't have GPA then enter 0 in GPA. If you have already submitted the form with some other character(s) in that field then no need to submit the form again. If you haven't appeared for any previous semester(s) (for direct second year students), then select any month, year; enter Seat Number 0 and GPA 0.</p>
+                        </div>
+
+
+
+
+
+
+                        <div class="form-group row">
+                            <div class="form-group col-md-2">
+                                <label class="control-label">Gender</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="gender" id="optionsRadios1" value="M" checked="">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="gender" id="optionsRadios2" value="F">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="gender" id="optionsRadios2" value="O">
+                                        Other
+                                    </label>
+                                </div>
+                                <p class="help-block">Your Gender</p>
+                            </div>
+
+                            <div class="form-group col-md-5">
+                                <label class="control-label" for="Category">Category</label>
+                                <div class="dropdown">
+                                    <select name="category" id="categoryf" class="form-control">
+                                        <option value="Choose One...">Choose One...</option>
+                                        <option value="OPEN">OPEN</option>
+                                        <option value="SC">SC</option>
+                                        <option value="ST">ST</option>
+                                        <option value="DT">DT</option>
+                                        <option value="NTB">NTB</option>
+                                        <option value="NT1">NT1</option>
+                                        <option value="NT2">NT2</option>
+                                        <option value="NT3">NT3</option>                                        
+                                        <option value="OBC/SBC">OBC/SBC</option>
+                                    </select>
+                                </div>
+                                <p class="help-block">Please select your Category</p>
+                            </div>
+
+                            <div class="form-group col-md-5">
+                                <label class="control-label" for="EBC">EBC / Non-EBC</label>
+                                <div class="dropdown">
+                                    <select name="ebc" id="ebc" class="form-control">
+                                        <option value="Choose One...">Choose One...</option>
+                                        <option value="Y">EBC</option>
+                                        <option value="N">Non-EBC</option>
+                                    </select>
+                                </div>
+                                <p class="help-block">Are you EBC (Economically Backward Class) or not?</p>
+                            </div>
+							
+							<div class="form-group col-md-6">
+                                <label class="control-label" for="Disability">Disability</label>
+                                <div class="dropdown">
+                                    <select name="disability" id="disability" class="form-control">
+                                        <option value="Choose One...">Choose One...</option>
+                                        <option value="NA">Not Applicable</option>
+                                        <option value="Blind">Blind</option>
+                                        <option value="PhyHC">Phy H.C.</option>
+                                        <option value="Dyslexia">Dyslexia</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <p class="help-block">Select your disability(if any). Please submit certificate in case of Dyslexia to the college.</p>
+                             </div>
+							
+                        </div>
+						
+
+                        <div class="form-group">
+                            <label class="control-label" for="Name">Complete Postal Address</label>
+                            <input type="text" class="form-control" name="address" id="address" placeholder="Enter Your Complete Address" maxlength="255" required="">
+                            <div class="row">
+                                <div class="col-md-7"><input type="text" class="form-control" placeholder="City" maxlength="50" name="city" required=""></div>
+                                <div class="col-md-5"><input type="tel" class="form-control" placeholder="Pin Code" maxlength="6" onkeypress="return numeralsOnly(event)" name="pincode" required=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="dropdown col-md-6">
+                                    <select name="state" id="state" class="form-control">
+                                        <option value="Choose One...">Select Your State...</option>
+                                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option value="Assam">Assam</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Chandigarh">Chandigarh</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
+                                        <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                        <option value="Daman and Diu">Daman and Diu</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Lakshadweep">Lakshadweep</option>
+                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Manipur">Manipur</option>
+                                        <option value="Meghalaya">Meghalaya</option>
+                                        <option value="Mizoram">Mizoram</option>
+                                        <option value="Nagaland">Nagaland</option>
+                                        <option value="Orissa">Orissa</option>
+                                        <option value="Puducherry">Puducherry</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Sikkim">Sikkim</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Telengana">Telengana</option>
+                                        <option value="Tripura">Tripura</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-offset-1 col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">+91</span>
+                                        <input type="tel" class="form-control" name="telno" placeholder="Telephone No" onkeypress="return numeralsOnly(event)" maxlength="10" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Email address" maxlength="255" required="">
+                            </div>
+
+                        </div>
+
+                        
+                        
+
+                        
+                        <div id="regtable" class="form-group">
+                        </div>
+
+                        <div id="electable" class="form-group">
+                        </div>
+
+                        <div id="kttable" class="form-group">
+                        </div>
+
+                        <div id="showFees" style="display:none" class="form-group">
+                        </div>
+
+                        
+                       <div class="form-group hidden-print">
+                            <label class="control-label" for="Captcha">Captcha Code</label>
+                            <div class="g-recaptcha" data-sitekey="6LcXbgITAAAAAIYMmF5RwRIrVw6kjgEEnZ9vW1Rk"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcXbgITAAAAAIYMmF5RwRIrVw6kjgEEnZ9vW1Rk&amp;co=aHR0cDovL211ZXhhbS5tdS5hYy5pbjo4MA..&amp;hl=en&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;size=normal&amp;cb=32o5k6akdlno" width="304" height="78" role="presentation" name="a-bhtm0bet4cwk" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                            <p class="help-block">Please Click the box above and complete the requested task. Click Verify and then proceed to Form Submission.</p>
+                        </div>
+
+                        <button id="btnsubmitform" type="submit" class="btn btn-success col-md-12" onclick="return validate();">Submit Form</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myModalLabel">Form Already Submitted</h4>
+      </div>
+      <div id="showdialwin" class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="gotoackpage">Print Acknowledgement</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Try Again with New Seat Number / ERN</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+<script type="text/javascript">$('#myModal').modal({backdrop:'static',keyboard:true});$('#myModal').modal('hide');document.getElementById("gotoackpage").onclick=function(){location.href="ackref.php";};</script>
+<!-- STAT UCC -->
+<script type="text/javascript">var _paq=_paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//muexam.mu.ac.in/statucc/";_paq.push(['setTrackerUrl',u+'piwik.php']);_paq.push(['setSiteId',1]);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.async=true;g.defer=true;g.src=u+'piwik.js';s.parentNode.insertBefore(g,s);})();</script>
+<noscript><p><img src="//muexam.mu.ac.in/statucc/piwik.php?idsite=1" style="border:0;" alt=""/></p></noscript>
+<!-- End STAT UCC Code -->
+
+<div class="inputapi-popupeditor inputapi-popupeditor-vertical" role="menu" aria-haspopup="true" tabindex="-1" style="user-select: none; display: none;"><table style="user-select: none;"><tbody style="user-select: none;"><tr style="user-select: none;"><td style="user-select: none;"><table style="width: 100%; user-select: none;"><tbody style="user-select: none;"><tr style="user-select: none;"><td style="width: 100%; user-select: none;"><div class="inputapi-popupeditor-input" style=""><span class="inputapi-popupeditor-cursor" style=""></span></div></td><td width="63px" style="user-select: none;"><div class="inputapi-popupeditor-logo" style="user-select: none;"></div></td></tr></tbody></table><table style="width: 100%; user-select: none;"><tbody style="user-select: none;"><tr style="user-select: none;"><td style="width: 100%; user-select: none;"><div class="inputapi-popupeditor-content" style="user-select: none;"></div></td><td width="54px" style="user-select: none;"><div class="inputapi-popupeditor-nav inputapi-popupeditor-nav-horizontal" tabindex="-1" style="user-select: none; display: none;"><div class="inputapi-inline-block inputapi-custom-button inputapi-custom-button-disabled" title="" role="button" aria-disabled="true" id=":0" style="user-select: none;"><div class="inputapi-inline-block inputapi-custom-button-outer-box" style="user-select: none;"><div class="inputapi-inline-block inputapi-custom-button-inner-box" style="user-select: none;"><div class="inputapi-popupeditor-pageup inputapi-popupeditor-navbutton" style="user-select: none;"></div></div></div></div><div class="inputapi-inline-block inputapi-custom-button" title="" role="button" id=":1" style="user-select: none;"><div class="inputapi-inline-block inputapi-custom-button-outer-box" style="user-select: none;"><div class="inputapi-inline-block inputapi-custom-button-inner-box" style="user-select: none;"><div class="inputapi-popupeditor-pagedown inputapi-popupeditor-navbutton" style="user-select: none;"></div></div></div></div></div></td></tr></tbody></table></td></tr></tbody></table></div><div class="inputapi-multisegmentpopupeditor inputapi-multisegmentpopupeditor-vertical" role="menu" aria-haspopup="true" tabindex="-1" style="user-select: none; display: none;"><table style="user-select: none;"><tbody style="user-select: none;"><tr style="user-select: none;"><td style="user-select: none;"><div class="inputapi-multisegmentpopupeditor-input" contenteditable="true" tabindex="-1" style=""></div><div class="inputapi-multisegmentpopupeditor-content" style="user-select: none;"></div><div class="inputapi-multisegmentpopupeditor-footer" style="user-select: none;"><div class="inputapi-multisegmentpopupeditor-logo" style="user-select: none;"></div><div class="inputapi-multisegmentpopupeditor-indicator" style="user-select: none;"></div><div class="inputapi-multisegmentpopupeditor-footer-end" style="user-select: none;"></div></div></td></tr></tbody></table></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;k=6LcXbgITAAAAAIYMmF5RwRIrVw6kjgEEnZ9vW1Rk&amp;cb=36ie77tbsjw7" name="c-bhtm0bet4cwk" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

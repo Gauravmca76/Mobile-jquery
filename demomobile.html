@@ -2,6 +2,7 @@
 <html lang="en">
    <head>
       <title> || Examination Form || </title>
+      <meta charset="utf-8">
       <meta name = "viewport" content = "width = device-width, initial-scale = 1">
       <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
       <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -20,6 +21,53 @@
          <div data-role = "main" class = "ui-content" style="background: #FFF0EC;">
             <form action="#" method="post" autocomplete="off">
                <div><h3 align="center"><strong>Online Application For Examination</strong></h3></div>
+               <div><h5 align="center" style="color: #a94442;">Students should fill this form online and submit the printout of the acknowledgement to the college.</h5></div>
+               <div>
+                  <p align="center" style="color: green;">
+                     <strong>
+                        Your IP Address is recorded! 
+                        Any mischief with the data of other students will attract actions as per IT Act.
+                     </strong>
+                  </p>
+               </div>
+               <div>
+                  <h4 align="center" style="color: #a94442;">
+                  <strong>KT Students to Note:</strong>
+                  </h4>
+                  <p>
+                     <strong>Only Students who had appeared for the Examinations in month of Second Half,
+                         2019 and failed in some subjects can submit their form by pressing KT button below.</strong>
+                  </p>
+                  <p>
+                     <strong>
+                        Fail students of previous examinations who are appearing after a gap 
+                        (who had not appeared for Second Half, 2019 exam in failed subjects) 
+                        have to submit conventional hard copy form to their colleges.
+                     </strong>
+                  </p>
+               </div>
+               <div>
+                  <label for="studenttype">
+                     Select Type:
+                  </label>
+                  <center>
+                     <div data-toggle="buttons">
+                        <label class="btn btn-default active">
+                           <input type="radio" name="stype" id="regstud" value="Regular">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: bold" id="RegularVal">Regular</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </label>
+                       <label class="btn btn-default">
+                        <input type="radio" name="stype" id="ktstud" value="KT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="KTVal">KT</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </label>
+                     </div>
+                  </center>
+                  <p>Students appearing for examinations of a particular semester for the first 
+                     time should click Regular Button and Students who wish to apply 
+                     for their failed subjects should click KT button.</p>
+               </div>
             </form>
          </div>
          <div data-role = "footer">

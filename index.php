@@ -2,56 +2,35 @@
 <html>
    <head>
       <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
-      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <link rel="stylesheet" href="./jquery.mobile/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="./jquery.mobile/demos/_assets/css/jqm-demos.css">
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+		<script src="./jquery.mobile/demos/js/jquery.js"></script>
+		<script src="./jquery.mobile/demos/_assets/js/index.js"></script>
+		<script src="./jquery.mobile/demos/js/jquery.mobile-1.4.5.min.js"></script>
    </head>
    <body>
       <div data-role = "page">
       <div data-role = "header">
-            <div class = "ui-body-a ui-body">
-            <div data-role = "navbar">
-               <ul>
-                  <li><a href = "#" data-icon="home" style="background-color: burlywood"></a></li>
-                  <li><a href = "#" data-icon="star" style="background-color: burlywood"></a></li>
-                  <li><a href = "contactus.php" data-icon="phone" style="background-color: burlywood"></a></li>
-               </ul>
-            </div>
+            <div class = "ui-body-a ui-body" style="background: #FFF0EC;">
+              <h1 align="center"> Demo Page With Database!!! </h1>
          </div>
          </div>
          <div data-role = "main" class = "ui-content">
-            <form method = "post" action = "#">
-               <input type = "text" name = "fname" placeholder="Full Name">
+            <h3 align="center"> Registration Page</h3>
+            <form method = "post" action = "showdata.php">
+               <input type = "text" name = "fname" placeholder="Full Name" required>
 
-               <input type = "email" name = "email" placeholder="Email Address">
+               <input type = "text" name = "contact" placeholder="Contact Number" required>
 
-               <label for = "date">Birth Date</label>
-               <input type = "date" name = "date">
+               <input type = "email" name = "email" placeholder="Email ID" required>
 
-               <label for = "file">Upload File</label>
-               <input type = "file" name = "file">
+               <input type = "password" name = "password" placeholder="Password" required>
 
-               Select Car
-               <fieldset data-role = "controlgroup" name = "checkbox">
-                  <input type = "checkbox" name = "checkbox" id = "checkbox">
-                  <label for = "checkbox">BMW</label>
+               <input type = "password" name = "cpassword" placeholder="Confirm Password" required>
 
-                  <input type = "checkbox" name = "checkbox" id = "checkbox1">
-                  <label for = "checkbox1">Audi</label>
-
-                  <input type = "checkbox" name = "checkbox" id = "checkbox2">
-                  <label for = "checkbox2">Skoda</label>
-               </fieldset>
-
-               Gender
-               <fieldset data-role = "controlgroup">
-                  <input type = "radio" name = "radio" id = "radio">
-                  <label for = "radio">Male</label>
-
-                  <input type = "radio" name = "radio" id = "radio1">
-                  <label for = "radio1">Female</label>
-               </fieldset>
-               <input type = "submit" value = "Submit" data-inline = "true">
+               <input type = "submit" value = "Submit" name="submit" data-inline = "true">
             </form>
          </div>
          <div data-role = "footer">
